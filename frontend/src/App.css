@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 
+  sans-serif;
+}
+
+:root {
+  --primary: #0c2107;
+  --secondary: #256316;
+  /* --secondary: #0c8025; */
+  --lightgreen: #179175;
+  --icons: #e1ad01;
+}
+
+html {
+  scroll-behavior: smooth;
+}

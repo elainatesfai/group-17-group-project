@@ -1,0 +1,229 @@
+.Nav {
+    z-index: 10;
+    background: var(--primary);
+    /* box-shadow: 0 0 20px black; */
+    box-shadow: 0 0 20px var(--primary);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 1rem;
+    position: fixed;
+    /* margin-top: 100px; */
+}
+
+.NavContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+};
+
+.Logo {
+    position: absolute;
+    display: flex;
+    justify-self: flex-start;
+    cursor: pointer;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.LogoWrapper {
+    margin-bottom: 25px;
+    position: absolute;
+    margin-top: 10px;
+    background: var(--primary);
+    /* box-shadow: 0 0 20px black; */
+    box-shadow: 0 0 20px var(--primary);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    z-index: -1;
+    top: -5px;
+    left: calc((100% - 155px) / 2);
+}
+
+.LogoWrapper:before {
+    position: absolute;
+    content: "";
+    width: 150%;
+    height: 55px;
+    left: -25%;
+    /* top: -30px; */
+    background: var(--primary);
+}
+
+.Img {
+    position: absolute;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+    top: 7px;
+
+    /* -webkit-filter: drop-shadow(2px 2px 2px #fff);
+    filter: drop-shadow(2px 2px 2px #fff); */
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+}
+
+.Item {
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 3rem;
+    height: 100%;
+    cursor: pointer;
+    margin: auto;
+}
+
+.MobileIcon {
+    display: none;
+    cursor: pointer;
+    z-index: 11;
+}
+
+
+
+.BurgerMenu {
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.BurgerBar {
+    width: 2rem;
+    height: 0.3rem;
+    background-color: aliceblue;
+    border-radius: 0.5em;
+    z-index: 13;
+}
+
+.DropdownMenu{
+    position: relative;
+    background: var(--secondary);
+    box-shadow: 0 0 20px black;
+    width: 100%;
+    height: 375px;
+    display: none;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 6;
+}
+
+.DropdownMenuHidden{
+    position: relative;
+    background: var(--secondary);
+    box-shadow: 0 0 20px black;
+    width: 100%;
+    height: 400px;
+    display: none;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 1rem;
+    position: fixed;
+}
+
+.DropdownMenuList {
+    padding-top: 105px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 60px);
+    text-align: center;
+}
+
+.DropdownMenuItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hover effects */
+
+.Item:hover {
+    color: var(--icons);
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+.MobileIcon:hover {
+    color: var(--icons);
+    transition: all 0.3s ease-in-out;
+}
+
+.BurgerBar:hover {
+    background-color: var(--icons);
+    transition: all 0.3s ease-in-out;
+}
+
+.DropdownMenuItem:hover {
+    color:white;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 20px var(--icons), 0 0 25px var(--icons), 0 0 20px var(--icons);
+}
+
+/* Media Quieries */
+@media (max-width: 1000px) {
+    .Item {
+        display: none;
+        transition: 0.5s ease-in-out;
+    }
+
+    .MobileIcon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        bottom: 30px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+        transition: 0.5s ease-in-out;
+    }
+
+    .DropdownMenu{
+        display:flex;
+        transition: 0.5s ease-in-out;
+    }
+
+    .LogoWrapper {
+        left: calc((100% - 125px) / 2);
+    }
+}
