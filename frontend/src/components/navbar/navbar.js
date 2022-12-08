@@ -51,7 +51,7 @@ export default function Navbar() {
             {/* <div className='MobileIcon' onClick={() => setIsMenuClicked(!isMenuClicked)}>
               {(isMenuClicked?<HiMenuAlt4/>:<RiCloseLine/>)}
             </div> */}
-
+//dropdown menu icon is the MobileIcon
             <div className='MobileIcon' onClick={() => updateMenu(setIsMenuClicked(!isMenuClicked))}>
               {(isMenuClicked?<RiCloseLine/>:<HiMenuAlt4/>)}
             </div>
