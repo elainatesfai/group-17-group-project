@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { RiCloseLine } from 'react-icons/ri';
-import './navbar.css';
+import '../css/navbar.css';
 
 export default function Navbar() {
 
