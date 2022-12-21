@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { RiCloseLine } from 'react-icons/ri';
 import '../css/navbar.css';
@@ -9,6 +10,26 @@ export default function Navbar() {
   const setBurgerClass = useState("BurgerBar unclicked")
   const setMenuClass = useState("DropdownMenu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
+
+  // to navigate using navbar
+
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('/');
+  };
+
+  const navigateToCalorieCalculator = () => {
+    navigate('/caloriecalculator');
+  };
+
+  const navigateToWeightTracker = () => {
+    navigate('/weighttracker');
+  };
+
+  const navigateToMealPlanner = () => {
+    navigate('/mealplanner');
+  };
 
   // toggle burger DropdownMenu change
   const updateMenu = () => {
@@ -27,19 +48,19 @@ export default function Navbar() {
       <div className='Nav'>
         <div className='NavContainer'>
           
-          <div className='Item'>
+          <div className='Item'  onClick={navigateToHome}>
                 Home
             </div>
-            <div className='Item'>
+            <div className='Item' onClick={navigateToWeightTracker}>
                 Weight Tracker
             </div>
-            <div className='Item'>
+            <div className='Item' onClick={navigateToHome}>
             
             </div>
-            <div className='Item'>
+            <div className='Item' onClick={navigateToCalorieCalculator}>
                 Calorie Calculator
             </div>
-            <div className='Item'>
+            <div className='Item' onClick={navigateToMealPlanner}>
                 Meal Planner
             </div>
           </div>
