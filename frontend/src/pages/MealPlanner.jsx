@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
 
 function MealPlanner() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Navbar />
+    </>
   )
 }
 

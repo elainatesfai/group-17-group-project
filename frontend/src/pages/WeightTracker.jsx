@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
 
 function WeightTracker() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Navbar />
+    </>
   )
 }
 
