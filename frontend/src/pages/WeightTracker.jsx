@@ -1,10 +1,13 @@
-import React from 'react';
-import '../css/weighttracker.css';
 
-const WeightTracker = () => {
+import React from 'react'
+import Navbar from '../components/Navbar';
+
+function WeightTracker() {
   return (
-    
-    <div className="weight-tracker">
+    <>
+      /* <Navbar /> */
+      
+      <div className="weight-tracker">
       <h1>Weight Tracker</h1>
       <form>
         <label htmlFor="weight-input">Enter your weight:</label>
@@ -42,8 +45,8 @@ const WeightTracker = () => {
         <img src="/images/weight-goal.png" alt="Weight goal visualization" />
       </div>
     </div>
-    
-  );
-};
+    </>
+  )
+}
 
-export default WeightTracker;
+export default WeightTracker

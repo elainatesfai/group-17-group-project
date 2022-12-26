@@ -67,6 +67,7 @@
     width: 100px;
     top: 7px;
 
+
     /* -webkit-filter: drop-shadow(2px 2px 2px #fff);
     filter: drop-shadow(2px 2px 2px #fff); */
 }
@@ -94,6 +95,10 @@
     cursor: pointer;
     margin: auto;
 }
+
+/* .Item:nth-child(3) {
+    right: 100px;
+} */
 
 .MobileIcon {
     display: none;
