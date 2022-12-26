@@ -6,8 +6,9 @@ import '../css/weighttracker.css'
 function WeightTracker() {
   return (
     <>
+      //WeightTracker//
        {/* <Navbar />  */}
-      
+
       <div className="weight-tracker">
       <h1>Weight Tracker</h1>
       <form>
