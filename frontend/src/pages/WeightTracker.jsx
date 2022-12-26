@@ -6,7 +6,6 @@ function WeightTracker() {
   return (
     <>
       /* <Navbar /> */
-      //WeightTracker//
 
       <div className="weight-tracker">
       <h1>Weight Tracker</h1>
