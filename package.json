@@ -1,5 +1,7 @@
 {
+  "private": true,
+  "proxy":  "http://localhost:8080",
   "dependencies": {
-    "react-icons": "^4.7.1"
+  "react-icons": "^4.7.1"
   }
 }

@@ -66,29 +66,25 @@ export default function Navbar() {
           </div>
           <div className='Logo' >
               <div className='LogoWrapper'>
-                <img className='Img' src='../assets/Images/Logo.png' alt='' />
+                <img className='Img' src='../assets/Images/Logo2.png' alt='' />
               </div>
             </div>
-            {/* <div className='MobileIcon' onClick={() => setIsMenuClicked(!isMenuClicked)}>
-              {(isMenuClicked?<HiMenuAlt4/>:<RiCloseLine/>)}
-            </div> */}
-
             <div className='MobileIcon' onClick={() => updateMenu(setIsMenuClicked(!isMenuClicked))}>
               {(isMenuClicked?<RiCloseLine/>:<HiMenuAlt4/>)}
             </div>
         </div>
         <div className={(isMenuClicked?'DropdownMenu':'DropdownMenuHidden')}>
           <div className='DropdownMenuList'>
-            <div className='DropdownMenuItem'>
+            <div className='DropdownMenuItem' onClick={navigateToHome}>
               Home
             </div>
-            <div className='DropdownMenuItem'>
+            <div className='DropdownMenuItem' onClick={navigateToWeightTracker}>
               Weight Tracker
             </div>
-            <div className='DropdownMenuItem'>
+            <div className='DropdownMenuItem' onClick={navigateToCalorieCalculator}>
               Calorie Calculator
             </div>
-            <div className='DropdownMenuItem'>
+            <div className='DropdownMenuItem' onClick={navigateToMealPlanner}>
               Meal Planner
             </div>
           </div>

@@ -12,7 +12,7 @@ function App() {
     <Routes>
        <Route path='/' element={<Home />} />
        <Route path='/weighttracker' element={<WeightTracker />} />
-       <Route path='/calculator' element={<CalorieCalculator/>} />
+       <Route path='/caloriecalculator' element={<CalorieCalculator/>} />
        <Route path='/mealplanner' element={<MealPlanner/>} />
     </Routes>
  </Router>
