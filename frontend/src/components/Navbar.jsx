@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
           <div className='Logo' >
               <div className='LogoWrapper'>
-                <img className='Img' src='../assets/Images/Logo2.png' alt='' />
+                <img className='Img' src='../assets/Images/Logo.png' alt='' />
               </div>
             </div>
             <div className='MobileIcon' onClick={() => updateMenu(setIsMenuClicked(!isMenuClicked))}>
