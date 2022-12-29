@@ -7,11 +7,9 @@
 }
 
 :root {
-  --primary: #0c2107;
-  --secondary: #256316;
-  /* --secondary: #0c8025; */
-  --lightgreen: #179175;
-  --icons: #e1ad01;
+  --primary: #000e0d;
+  --secondary: #00bf76;
+  --icons: #8ffdf0;
 }
 
 html {
