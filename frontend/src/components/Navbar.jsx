@@ -55,7 +55,7 @@ export default function Navbar() {
                 Weight Tracker
             </div>
             <div className='Item' onClick={navigateToHome}>
-            
+              
             </div>
             <div className='Item' onClick={navigateToCalorieCalculator}>
                 Calorie Calculator
@@ -65,10 +65,10 @@ export default function Navbar() {
             </div>
           </div>
           <div className='Logo' >
-              <div className='LogoWrapper'>
-                <img className='Img' src='../assets/Images/Logo.png' alt='' />
-              </div>
+            <div className='LogoWrapper'>
+              <img className='Img' src='../assets/Images/Logo.png' alt='' />
             </div>
+          </div>
             <div className='MobileIcon' onClick={() => updateMenu(setIsMenuClicked(!isMenuClicked))}>
               {(isMenuClicked?<RiCloseLine/>:<HiMenuAlt4/>)}
             </div>

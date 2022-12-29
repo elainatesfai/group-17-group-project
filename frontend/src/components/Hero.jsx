@@ -1,10 +1,25 @@
 import React from 'react'
+import '../css/hero.css'
+
+
 
 function hero() {
   return (
     <div className='HeroContainer'>
-        <img className='HeroBg' src='../assets/images/hero2.png' width='100%' alt=''/>
-        <h1>my name is itteqa</h1>
+      <div className='HeroContent'>
+        <div className='HeroTextContainer'>
+          <div className='HeroContentLogoWrapper' />
+          <div className='HeroTextHeading'>
+            Welcome back, (fName)
+          </div>
+          <div className='HeroTextSubTitle'>
+            Bleh Blue Blee Blah Blough
+          </div>
+        </div>
+        <div className='HeroImgContainer'>
+          <img className='HeroImg' src='../assets/images/Hero.svg' alt='' />
+        </div>
+      </div>
     </div>
   )
 }
