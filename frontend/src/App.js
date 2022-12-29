@@ -8,6 +8,7 @@ import MealPlanner from './pages/MealPlanner';
 
 function App() {
   return (
+
     <Router>
     <Routes>
        <Route path='/' element={<Home />} />
@@ -16,7 +17,10 @@ function App() {
        <Route path='/mealplanner' element={<MealPlanner/>} />
     </Routes>
  </Router>
+
   );
 }
+
 //pull request
+
 export default App;
