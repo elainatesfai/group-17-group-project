@@ -4,6 +4,7 @@ import Hero from './components/hero/hero';
 
 function App() {
   return (
+  //test
    <>
     <Navbar/>
     <Hero/>
