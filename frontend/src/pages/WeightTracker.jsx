@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Navbar from '../components/Navbar';
-// import '../css/weighttracker.css'
+import '../css/weighttracker.css'
 
 function WeightTracker() {
   return (
