@@ -10,6 +10,7 @@ import "../css/navbar.css";
 function WeightTracker() {
   return (
     <>
+
       {Navbar()}
       <div className="gap"></div>
       <div className="container1">
@@ -43,6 +44,7 @@ function WeightTracker() {
             </p>
           </div>
         </div>
+
       </div>
 
       {/* <div className="weight-tracker">
