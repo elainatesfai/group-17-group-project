@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar";
 import "../css/weighttracker.css";
 import "../css/navbar.css";
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>;
+
 
 function WeightTracker() {
   return (
