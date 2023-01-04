@@ -5,6 +5,7 @@ const CalorieCalculator = () => {
   return (
     <>
       <Navbar />
+      {/* hey */}
     </>
   )
 }
