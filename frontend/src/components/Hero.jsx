@@ -1,23 +1,20 @@
 import React from 'react'
 import '../css/hero.css'
 
-
-
 function hero() {
   return (
     <div className='HeroContainer'>
-      <div className='HeroContent'>
+      <div className='HeroContentContainer'>
         <div className='HeroTextContainer'>
-          <div className='HeroContentLogoWrapper' />
-          <div className='HeroTextHeading'>
-            Welcome back, (fName)
-          </div>
-          <div className='HeroTextSubTitle'>
-            Bleh Blue Blee Blah Blough
-          </div>
+          <h1 div className='HeroMainText'>
+            Welcome to Unitriition, fName!
+          </h1>
+          <p className='HeroSubTitle'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!
+          </p>
         </div>
         <div className='HeroImgContainer'>
-          <img className='HeroImg' src='../assets/images/Hero.svg' alt='' />
+          <img src='./assets/images/Hero.svg' alt='' />
         </div>
       </div>
     </div>

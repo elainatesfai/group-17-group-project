@@ -1,88 +1,79 @@
 .HeroContainer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 800px;
+    position: relative;
+    z-index: 1; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background:url(../../public/assets/images/home-bg.jpg) no-repeat;
     background-size: cover;
-	background-attachment: fixed;
-	/* z-index: 11; */
-	align-items: center;
-	height: 650px;
-	position: relative;
-	display: flex;
+    background-position: center;
 }
 
-.HeroContent {
-    margin: 10px 150px 0px 150px;
-    height: 480px;
+.HeroContainer img {
+    margin-top: 100px;
     width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.HeroContentContainer {
+    z-index: 3;
+    max-width: 1800px;
+    position: absolute;
+    padding: 8px 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-color: #f7f7f7;
-    border-radius: 25px;
-    clear: both;
-}
-
-.HeroContentLogoWrapper {
-    margin-bottom: 25px;
-    position: absolute;
-    margin-top: 15px;
-    background: white;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 140px;
-    z-index: 3;
-    top: -5px;
-    left: calc((100% - 145px) / 2);
-}
-
-.HeroContentLogoWrapper::before{
-    position: absolute;
-    content: "";
-    width: 150%;
-    height: 55px;
-    left: -25%;
-    /* top: -30px; */
-    background: white;
 }
 
 .HeroTextContainer {
-    padding: 0 30px;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    flex:1 1 40rem;
 }
 
-.HeroTextHeading {
-    margin-bottom: 1.5rem;
-	font-size: clamp(2.8rem, 6vw, 6.7rem);
-	line-height: 1.1;
-	font-weight: 600;
-	text-align: center;
-	color: black;
-}
-
-.HeroTextSubTitle {
+.HeroSubTitle {
+    margin-top: 24px;
+    color: darkgrey;
+    font-size: 24px;
     text-align: center;
-	font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+    max-width: 600px;
+}
+
+.HeroMainText {
+    color: var(--primary);
+    font-size: 48px;
+    text-align: center;
 }
 
 .HeroImgContainer {
-    margin-bottom: 15px;
-    padding: 0 15px;
+    display: flex;
+    flex:1 1 40rem;
 }
 
-.HeroImg {
-    width: 100%;
-    /* height: 150%; */
-    margin: 0 0 10px 0;
-    padding-right: 0;
+.HeroImgContainer img {
+    margin-left: 60px;
+    width:100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    padding:1rem;
+    animation:float 3s linear infinite;
 }
 
-/* Media Queries */
-@media (max-width: 1000px) {
-    .HeroImg{
-        width: 50%;
+@keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
     }
-}
+    50%{
+      transform: translateY(2.5rem);
+    }
+  }
