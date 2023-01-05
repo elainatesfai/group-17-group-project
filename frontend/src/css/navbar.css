@@ -200,7 +200,7 @@
 .DropdownMenuItem:hover {
     color:white;
     transition: all 0.3s ease-in-out;
-    text-shadow: 0 0 20px var(--icons), 0 0 25px var(--icons), 0 0 20px var(--icons);
+    /* text-shadow: 0 0 20px var(--icons), 0 0 25px var(--icons), 0 0 20px var(--icons); */
 }
 
 /* Media Quieries */
