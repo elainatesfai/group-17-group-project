@@ -1,0 +1,29 @@
+.FooterContainer {
+    background-color: var(--primary);
+	padding: 4rem 0 2rem 0;
+    height: 150px;
+}
+
+.FooterWrapper {
+    max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.FooterGrid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	justify-content: center;
+	align-items: center;
+}
+
+.FooterColumn {
+    align-items: center;
+	grid-column: 1/-1;
+}
+
+.FooterSubTitle {
+    color: var(--secondary);
+    margin-bottom: 24px;
+	font-size: 20px;
+}

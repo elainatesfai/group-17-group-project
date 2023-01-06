@@ -12,7 +12,7 @@
     gap:1.5rem;
     min-height: 88vh;
     align-items: center;
-    /* background:url(../../public/assets/images/home-bg.jpg) no-repeat; */
+    background:url(../../public/assets/images/home-bg.jpg) no-repeat;
     /* background: linear-gradient(225deg,#0abac2,#b2de94); */
     background-size: cover;
     background-position: center;
@@ -101,18 +101,35 @@
 }
 
 .HeroBtnWrapper button {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    color: linear-gradient(225deg,#0abac2,#b2de94);
-    border-radius: 30px;
-    padding: 12px 30px;
-    white-space: nowrap;
-    width: auto;
+    border-radius: 4px;
+	background: none;
+	white-space: nowrap;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #ebecf0;
+    color: black;
+	outline: none;
+	border: 2px solid #fff;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.HeroBtnWrapper button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.HeroBtnWrapper button:hover:before {
+    height: 500%;
 }
 
 .HeroBtnWrapper button:hover {
