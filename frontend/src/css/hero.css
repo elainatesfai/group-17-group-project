@@ -10,9 +10,10 @@
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
-    min-height: 100vh;
+    min-height: 88vh;
     align-items: center;
-    background:url(../../public/assets/images/home-bg.jpg) no-repeat;
+    /* background:url(../../public/assets/images/home-bg.jpg) no-repeat; */
+    /* background: linear-gradient(225deg,#0abac2,#b2de94); */
     background-size: cover;
     background-position: center;
 }
@@ -30,9 +31,14 @@
     max-width: 1800px;
     position: absolute;
     padding: 8px 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+
+    /* height: 88vh; */
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
 }
 
 .HeroTextContainer {
@@ -41,18 +47,27 @@
     flex:1 1 40rem;
 }
 
+.HeroMainText {
+    color: var(--primary);
+    font-size: 4.5rem;
+    /* text-align: center; */
+    line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
 .HeroSubTitle {
     margin-top: 24px;
     color: darkgrey;
-    font-size: 24px;
-    text-align: center;
-    max-width: 600px;
+    font-size: 1.1.rem;
+    /* text-align: center; */
+    /* max-width: 600px; */
+    line-height: 32px;
+	margin-bottom: 2.3rem;
+    font-weight: 500;
 }
 
-.HeroMainText {
-    color: var(--primary);
-    font-size: 48px;
-    text-align: center;
+.HeroMainText span {
+    color: var(--secondary);
 }
 
 .HeroImgContainer {
@@ -66,7 +81,7 @@
     -o-object-fit: contain;
     object-fit: contain;
     padding:1rem;
-    animation:float 3s linear infinite;
+    /* animation:float 3s linear infinite; */
 }
 
 @keyframes float{
@@ -77,3 +92,31 @@
       transform: translateY(2.5rem);
     }
   }
+
+.HeroBtnWrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HeroBtnWrapper button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    color: linear-gradient(225deg,#0abac2,#b2de94);
+    border-radius: 30px;
+    padding: 12px 30px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.HeroBtnWrapper button:hover {
+    background: linear-gradient(225deg,#0abac2,#b2de94);
+    transition: 0.2s ease-in-out;
+    color: black;
+}
