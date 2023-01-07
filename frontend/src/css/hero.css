@@ -36,7 +36,7 @@
 	width: 100%;
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1.25fr 1fr;
 	align-items: center;
 	gap: 2rem;
 }
@@ -48,7 +48,7 @@
 }
 
 .HeroMainText {
-    color: var(--primary);
+    color: var(--dark);
     font-size: 4.5rem;
     /* text-align: center; */
     line-height: 1.2;
@@ -81,7 +81,7 @@
     -o-object-fit: contain;
     object-fit: contain;
     padding:1rem;
-    /* animation:float 3s linear infinite; */
+    animation:float 3s linear infinite;
 }
 
 @keyframes float{
@@ -96,8 +96,9 @@
 .HeroBtnWrapper {
     margin-top: 32px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: auto;
 }
 
 .HeroBtnWrapper button {

@@ -1,8 +1,7 @@
 .Nav {
     z-index: 10;
     background: var(--primary);
-    /* box-shadow: 0 0 10px var(--icons); */
-    box-shadow: 0 0 15px var(--primary);
+    box-shadow: 0 0 15px var(--dark);
     width: 100%;
     height: 60px;
     display: flex;
@@ -39,7 +38,7 @@
     margin-top: 12px;
     background: var(--primary);
     /* box-shadow: 0 0 20px var(--icons); */
-    box-shadow: 0 0 15px var(--primary);
+    box-shadow: 0 0 15px var(--dark);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -48,6 +47,11 @@
     z-index: -1;
     top: -5px;
     left: calc((100% - 125px) / 2);
+}
+
+.LogoWrapper img {
+    border: 1.1px solid var(--dark);
+    border-radius: 50%;
 }
 
 .LogoWrapper:before {
@@ -67,10 +71,6 @@
     height: 100px;
     width: 100px;
     top: 7px;
-
-
-    /* -webkit-filter: drop-shadow(2px 2px 2px #fff);
-    filter: drop-shadow(2px 2px 2px #fff); */
 }
 
 .Menu {
@@ -130,8 +130,8 @@
 
 .DropdownMenu{
     position: relative;
-    background: var(--icons);
-    box-shadow: 0 0 20px black;
+    background: var(--secondary);
+    box-shadow: 0 0 20px var(--dark);
     width: 100%;
     height: 375px;
     display: none;
@@ -145,7 +145,7 @@
 
 .DropdownMenuHidden{
     position: relative;
-    background: var(--secondary);
+    background: var(--primary);
     box-shadow: 0 0 20px black;
     width: 100%;
     height: 400px;
@@ -183,14 +183,15 @@
 /* Hover effects */
 
 .Item:hover {
-    color: var(--icons);
+    /* color: var(--primary); */
+    color: bisque;
     transition: all 0.3s ease-in-out;
     padding-bottom: 5px;
 }
 
 .MobileIcon:hover {
     color: var(--icons);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .BurgerBar:hover {
