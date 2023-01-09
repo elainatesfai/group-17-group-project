@@ -1,0 +1,142 @@
+:root 
+{
+    height: 100%;
+}
+.background 
+{
+    position: absolute;
+    left: 1px; 
+    right: -1px;
+    top: 5px;
+    bottom: -5px;
+    background-color: radial-gradient(70.39% 63.03% at 50% 56.48%, rgba(255, 255, 255, 0.5544) 52.6%, rgba(245, 245, 245, 0) 100%);
+}
+  
+.component h1 
+{
+    /* Calorie Calculator */
+
+position: absolute;
+width: 478px;
+height: 50px;
+left: 399px;
+top: 235px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: 0.2px;
+
+background: linear-gradient(180deg, rgba(18, 51, 10, 0.822917) 0.01%, #1D4F11 19.27%, rgba(18, 51, 10, 0.822917) 49.48%, rgba(18, 51, 10, 0) 93.75%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+.component p
+{
+   /* Your daily caloric intake calculator */
+
+position: absolute;
+width: 487px;
+height: 99px;
+left: 695px;
+top: 278px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 50px;
+/* or 208% */
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #83A264;
+}
+
+
+.inputcal
+ {
+    /* Input calories consumed: */
+
+position: absolute;
+width: 313px;
+height: 50px;
+left: 482px;
+top: 432px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 50px;
+/* identical to box height, or 208% */
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #12330A;
+}
+  
+.button-1 
+{
+   /* button Md sec- */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px 40px;
+gap: 10px;
+
+position: relative;
+left: 56.32%;
+right: 31.32%;
+
+
+background: #94B977;
+border: 1px solid #12330A;
+border-radius: 17px;
+  
+}
+ 
+.inputcal input{
+    /* Rectangle 7 */
+
+position: relative;
+width: 128px;
+height: 53px;
+
+
+background: #E2E2E2;
+border-radius: 10px;
+}
+
+.remainingcal {
+    /* Remaining calories: */
+
+position: absolute;
+width: 244px;
+height: 50px;
+left: 517px;
+top: 591px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 50px;
+/* identical to box height, or 208% */
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #12330A;
+}
+
+
+  
