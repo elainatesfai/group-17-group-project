@@ -1,0 +1,189 @@
+:root 
+{
+    height: 100%;
+}
+.background 
+{
+   /* Desktop - 1 */
+
+position: relative;
+width: 1440px;
+height: 880px;
+
+background: radial-gradient(192.9% 192.9% at 81.42% 135.4%, rgba(99, 165, 75, 0.43) 15.74%, rgba(255, 255, 255, 0) 61.96%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}
+  
+.component h1 
+{
+   /* Calorie Calculator */
+
+position: absolute;
+width: 732px;
+height: 95px;
+left: 151px;
+top: 177px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 70px;
+line-height: 50px;
+/* or 71% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2px;
+
+background: linear-gradient(180deg, rgba(18, 51, 10, 0.822917) 0.01%, #1D4F11 19.27%, rgba(18, 51, 10, 0.822917) 49.48%, rgba(18, 51, 10, 0) 93.75%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+.component p
+{
+  /* Your daily caloric intake calculator */
+
+position: absolute;
+width: 596px;
+height: 78px;
+left: 517px;
+top: 264px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 50px;
+/* or 167% */
+text-align: center;
+letter-spacing: 0.5px;
+
+color: #83A264;
+}
+
+.component h2{
+    /* let’s find how many calories you .. hdc */
+
+position: absolute;
+width: 732px;
+height: 95px;
+left: 58px;
+top: 303px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 50px;
+/* or 167% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #AFAFAF;
+}
+
+.component h3{
+   /* Your cal. goal */
+
+position: absolute;
+width: 283px;
+height: 113px;
+left: 1054px;
+top: 361px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 60px;
+line-height: 50px;
+/* or 83% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #AFAFAF;
+
+}
+.inputcal
+ {
+/* Input calories consumed: */
+
+position: absolute;
+width: 305px;
+height: 50px;
+left: 151px;
+top: 529px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 50px;
+/* identical to box height, or 208% */
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #12330A;
+}
+  
+.button-1 
+{
+   /* button Md sec- */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px 40px;
+gap: 10px;
+
+position: relative;
+left: 56.32%;
+right: 31.32%;
+
+
+background: #94B977;
+border: 1px solid #12330A;
+border-radius: 17px;
+  
+}
+ 
+.inputcal input{
+    /* Rectangle 7 */
+
+position: relative;
+width: 128px;
+height: 53px;
+
+
+background: #E2E2E2;
+border-radius: 10px;
+}
+
+.remainingcal {
+    /* Remaining calories: */
+
+position: absolute;
+width: 244px;
+height: 50px;
+left: 517px;
+top: 591px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 50px;
+/* identical to box height, or 208% */
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #12330A;
+}
+
+
+  

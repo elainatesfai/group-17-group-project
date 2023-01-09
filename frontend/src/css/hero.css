@@ -1,88 +1,140 @@
 .HeroContainer {
-    background-size: cover;
-	background-attachment: fixed;
-	/* z-index: 11; */
-	align-items: center;
-	height: 650px;
-	position: relative;
-	display: flex;
-}
-
-.HeroContent {
-    margin: 10px 150px 0px 150px;
-    height: 480px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background-color: #f7f7f7;
-    border-radius: 25px;
-    clear: both;
-}
-
-.HeroContentLogoWrapper {
-    margin-bottom: 25px;
-    position: absolute;
-    margin-top: 15px;
-    background: white;
-    border-radius: 50%;
-    align-items: center;
+    /* display: flex;
     justify-content: center;
-    width: 140px;
-    height: 140px;
-    z-index: 3;
-    top: -5px;
-    left: calc((100% - 145px) / 2);
+    align-items: center;
+    padding: 0 30px;
+    height: 800px;
+    position: relative;
+    z-index: 1; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 88vh;
+    align-items: center;
+    background:url(../../public/assets/images/home-bg.jpg) no-repeat;
+    /* background: linear-gradient(225deg,#0abac2,#b2de94); */
+    background-size: cover;
+    background-position: center;
 }
 
-.HeroContentLogoWrapper::before{
+.HeroContainer img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.HeroContentContainer {
+    z-index: 3;
+    max-width: 1800px;
     position: absolute;
-    content: "";
-    width: 150%;
-    height: 55px;
-    left: -25%;
-    /* top: -30px; */
-    background: white;
+    padding: 8px 24px;
+
+    /* height: 88vh; */
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1.25fr 1fr;
+	align-items: center;
+	gap: 2rem;
 }
 
 .HeroTextContainer {
-    padding: 0 30px;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    flex:1 1 40rem;
 }
 
-.HeroTextHeading {
-    margin-bottom: 1.5rem;
-	font-size: clamp(2.8rem, 6vw, 6.7rem);
-	line-height: 1.1;
-	font-weight: 600;
-	text-align: center;
-	color: black;
+.HeroMainText {
+    color: var(--dark);
+    font-size: 4.5rem;
+    /* text-align: center; */
+    line-height: 1.2;
+	margin-bottom: 2rem;
 }
 
-.HeroTextSubTitle {
-    text-align: center;
-	font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+.HeroSubTitle {
+    margin-top: 24px;
+    color: darkgrey;
+    font-size: 1.1.rem;
+    /* text-align: center; */
+    /* max-width: 600px; */
+    line-height: 32px;
+	margin-bottom: 2.3rem;
+    font-weight: 500;
+}
+
+.HeroMainText span {
+    color: var(--secondary);
 }
 
 .HeroImgContainer {
-    margin-bottom: 15px;
-    padding: 0 15px;
+    display: flex;
+    flex:1 1 40rem;
 }
 
-.HeroImg {
-    width: 100%;
-    /* height: 150%; */
-    margin: 0 0 10px 0;
-    padding-right: 0;
+.HeroImgContainer img {
+    margin-left: 10px;
+    width:100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    padding:1rem;
+    animation:float 3s linear infinite;
 }
 
-/* Media Queries */
-@media (max-width: 1000px) {
-    .HeroImg{
-        width: 50%;
+@keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
     }
+    50%{
+      transform: translateY(2.5rem);
+    }
+  }
+
+.HeroBtnWrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+
+.HeroBtnWrapper button {
+    border-radius: 4px;
+	background: none;
+	white-space: nowrap;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #ebecf0;
+    color: black;
+	outline: none;
+	border: 2px solid #fff;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.HeroBtnWrapper button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.HeroBtnWrapper button:hover:before {
+    height: 500%;
+}
+
+.HeroBtnWrapper button:hover {
+    background: linear-gradient(225deg,#0abac2,#b2de94);
+    transition: 0.2s ease-in-out;
+    color: black;
 }

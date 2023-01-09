@@ -1,8 +1,7 @@
 .Nav {
     z-index: 10;
     background: var(--primary);
-    /* box-shadow: 0 0 10px var(--icons); */
-    box-shadow: 0 0 15px var(--primary);
+    box-shadow: 0 0 15px var(--dark);
     width: 100%;
     height: 60px;
     display: flex;
@@ -36,10 +35,10 @@
 .LogoWrapper {
     margin-bottom: 25px;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 12px;
     background: var(--primary);
     /* box-shadow: 0 0 20px var(--icons); */
-    box-shadow: 0 0 15px var(--primary);
+    box-shadow: 0 0 15px var(--dark);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -50,11 +49,17 @@
     left: calc((100% - 125px) / 2);
 }
 
+.LogoWrapper img {
+    border: 1.1px solid var(--dark);
+    border-radius: 50%;
+}
+
 .LogoWrapper:before {
     position: absolute;
     content: "";
     width: 150%;
-    height: 55px;
+    top: -5px;
+    height: 58px;
     left: -25%;
     /* top: -30px; */
     background: var(--primary);
@@ -66,10 +71,6 @@
     height: 100px;
     width: 100px;
     top: 7px;
-
-
-    /* -webkit-filter: drop-shadow(2px 2px 2px #fff);
-    filter: drop-shadow(2px 2px 2px #fff); */
 }
 
 .Menu {
@@ -86,7 +87,7 @@
     font-weight: bold;
     letter-spacing: 1px;
 	cursor: pointer;
-    color: #fff;
+    color: white;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -122,7 +123,7 @@
 .BurgerBar {
     width: 2rem;
     height: 0.3rem;
-    background-color: aliceblue;
+    background-color: var(--primary);
     border-radius: 0.5em;
     z-index: 13;
 }
@@ -130,7 +131,7 @@
 .DropdownMenu{
     position: relative;
     background: var(--secondary);
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px var(--dark);
     width: 100%;
     height: 375px;
     display: none;
@@ -144,7 +145,7 @@
 
 .DropdownMenuHidden{
     position: relative;
-    background: var(--secondary);
+    background: var(--primary);
     box-shadow: 0 0 20px black;
     width: 100%;
     height: 400px;
@@ -182,14 +183,15 @@
 /* Hover effects */
 
 .Item:hover {
-    color: var(--icons);
+    /* color: var(--primary); */
+    color: var(--light-green);
     transition: all 0.3s ease-in-out;
     padding-bottom: 5px;
 }
 
 .MobileIcon:hover {
     color: var(--icons);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .BurgerBar:hover {
@@ -200,7 +202,7 @@
 .DropdownMenuItem:hover {
     color:white;
     transition: all 0.3s ease-in-out;
-    text-shadow: 0 0 20px var(--icons), 0 0 25px var(--icons), 0 0 20px var(--icons);
+    /* text-shadow: 0 0 20px var(--icons), 0 0 25px var(--icons), 0 0 20px var(--icons); */
 }
 
 /* Media Quieries */
