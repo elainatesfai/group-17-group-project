@@ -11,6 +11,8 @@ function CalorieCalculator(){
       <div className="component">
         <h1>Calorie Calculator</h1> 
         <p>Your daily caloric intake calculator</p>
+        <h2>let’s find how many calories you .. hdc</h2>
+        <h3>Your cal. goal</h3>
       </div>
 
         <div className="inputcal">
