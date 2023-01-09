@@ -1,0 +1,35 @@
+.FormSection {
+    padding: clamp(50px, 30vh, 100px) 0;
+	border-radius: 30px;
+	width: 100%;
+}
+
+.FormContainer {
+    display: flex;
+}
+
+.FormTitle {
+    margin-bottom: 4rem;
+	font-size: 3rem;
+	line-height: 1.1;
+	font-weight: 600;
+}
+
+.FormRow {
+    display: flex;
+	justify-content: center;
+	margin: 0 -15px -15px -15px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.FormColumn { 
+    margin-bottom: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding: 0 15px;
+	flex: 1;
+	max-width: 70%;
+	display: flex;
+	flex-direction: column;
+}

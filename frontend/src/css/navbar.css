@@ -184,7 +184,7 @@
 
 .Item:hover {
     /* color: var(--primary); */
-    color: bisque;
+    color: var(--light-green);
     transition: all 0.3s ease-in-out;
     padding-bottom: 5px;
 }
