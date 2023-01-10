@@ -6,7 +6,7 @@ function CalorieCalculator(){
   return (
     <>
       {Navbar()}
-      {/* hey */}
+      {/* hola */}
       <div className="background"></div>
       <div className="component">
         <h1>Calorie Calculator</h1> 
